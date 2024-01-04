@@ -1,5 +1,7 @@
 import React from 'react'
 import Nav from '../components/Nav'
+import TeamCard from '../components/TeamCard'
+import TeamData from '../lib/TeamData'
 
 const About = () => {
   return (<>
@@ -12,6 +14,19 @@ const About = () => {
      </div>
      <img src='https://themes.muffingroup.com/be/farm2/wp-content/uploads/2020/12/farm2-about-pic1.jpg' alt='about page heading' />
       </div>
+      <div className='second-about-header'>
+      <div className='before-team-card'>
+        <h2>Meet Our Team</h2>
+
+      </div>
+      <div className='all-team-card-container'>
+      
+      {TeamData?.map((person, index) => (
+        <TeamCard TeamData={person} index={index}/>
+      ))}
+      
+    </div>
+    </div>
     </div>
     </>
   )

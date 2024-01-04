@@ -18,10 +18,12 @@ const Home = () => {
       </div>
 
       <ProductBox />
-    
+      
+    <div className='below-products-container'>
     <div className='below-products'>
       <h2>Lorem ipsum dolor sit consect eiusmod</h2>
       <button className='read-more-button'>Read More </button>
+      </div>
     </div>
     </div>
     </div>
