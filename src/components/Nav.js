@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/logo-retina.png'
 
 const Nav = () => {
-  return (<section>
+  return (
     <nav className='navbar'>
        
         <img src={logo} alt='navbar'/>
@@ -18,7 +18,7 @@ const Nav = () => {
         </ul>
     </nav>
       
-      </section>
+    
 
   )
 }

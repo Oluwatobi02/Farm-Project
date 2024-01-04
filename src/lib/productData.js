@@ -34,8 +34,7 @@ const ProductData = [
         longDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut',
         fullDescription: '',
         img: AppleImg,
-    },
-    
+    }  
 ]
 
 export default ProductData

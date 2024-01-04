@@ -13,8 +13,16 @@ const Home = () => {
         <h1>natural flavor is born</h1>
         <hr className='small-hr'/>
       </div>
+      <div className='homepage-divider-text'>
+        <h2><i>Discover Our Product</i></h2>
+      </div>
+
       <ProductBox />
     
+    <div className='below-products'>
+      <h2>Lorem ipsum dolor sit consect eiusmod</h2>
+      <button>Read More </button>
+    </div>
     </div>
     </div>
     </>
