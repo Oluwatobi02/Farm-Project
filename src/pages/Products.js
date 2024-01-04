@@ -1,5 +1,7 @@
 import React from 'react'
 import Nav from '../components/Nav'
+import AlternatingSection from '../components/AlternatingSection'
+import ProductData from '../lib/productData'
 
 const Products = () => {
   return (
@@ -37,6 +39,7 @@ const Products = () => {
           
         </div>
         </div>
+        <AlternatingSection ProductData={ProductData}/>
       </div>
     </>
   )
