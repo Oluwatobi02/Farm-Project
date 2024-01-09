@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import ProductData from '../lib/productData';
 
-const ProductBox = () => {
-  const [activeBoxes, setActiveBoxes] = useState(Array(ProductData.length).fill(false));
+
+const ProductBox = ({ products }) => {
+  const [activeBoxes, setActiveBoxes] = useState(Array(products.length).fill(false));
 
   const handleBoxClick = (index) => {
     const newActiveBoxes = [...activeBoxes];
@@ -26,13 +26,13 @@ const ProductBox = () => {
   return (
     <>
       <div className='product-box-container'>
-        {ProductData.map((plant, index) => (
+        {products.slice(0,4)?.map((plant, index) => (
           <div className='product-box' id={index} key={index} >
             <div className='product-box-content'
             onClick={() => handleBoxClick(index)}>
               <h1>{plant.title}</h1>
               <div className='img-wrapper'>
-                <img src={plant.img} alt={plant.title} />
+                <img src={plant.singleImg} alt={plant.title} />
               </div>
               <p>{plant.shortDescription}</p>
             </div>
@@ -43,8 +43,8 @@ const ProductBox = () => {
                 <div className='box-active-container'
                 onClick={() => handleBoxClose(index)}>
                   <div className='box-info-container'>
-                    <h1>{plant.title}</h1>
-                    <p>{plant.longDescription}</p>
+                    <h1>FUN FACT</h1>
+                    <p>{plant.funFact}</p>
                     <p>To read more on this Click Explore</p>
                   </div>
                   <div className='button-container'>

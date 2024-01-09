@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo-retina.png'
+import logo from '../assets/upgs-logo.jpg'
 
 const Nav = () => {
   return (
