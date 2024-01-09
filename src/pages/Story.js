@@ -27,7 +27,7 @@ const Story = () => {
     <Carousel images={ProductData.slice(0,3)}/>
     </div>
    <ReusableDiv />
-  <AboutHeader />
+    <img src='https://themes.muffingroup.com/be/farm2/wp-content/uploads/2020/12/farm2-story-pic2.jpg' alt='under reusable div' className='under-reusable-div-img'/>
    <ReusableDiv />
 
    <AboutHeader />

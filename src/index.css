@@ -157,6 +157,13 @@ body {
   
     
   /*** Reusable Div ***/
+.under-reusable-div-img {
+  margin: 90px 0 0 110px;
+  
+  width: 1292.8px;
+  height: auto;
+}
+
   
   .outside-div {
     width: 100%;
@@ -164,7 +171,7 @@ body {
   }
   
   .div-container {
-    margin: 80px 110px 0 110px;
+    margin: 90px 110px 0 110px;
     padding: 90px 55px 75px;
     height: 600px;
     background-color: #FFE5B4;
