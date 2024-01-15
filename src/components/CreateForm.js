@@ -48,10 +48,6 @@ const CreateForm = () => {
 
                   <button>Submit</button>
             
-        <p>{ fullName }</p>
-        <p>{email}</p>
-        <p>{phone}</p>
-        <p>{message}</p>
         </form>
     </div>
   )
