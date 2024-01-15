@@ -24,6 +24,8 @@ body {
     width: 100%;
     max-height: 100%;
     overflow-x: hidden;
+    margin: 0;
+    center: 0;
   }
   /**** NavBar ****/
   .navbar {
@@ -75,6 +77,8 @@ body {
   .homepage {
       width: 100%;
       height: 100%;  
+      margin: 0;
+      padding: 0;
     }
 
     .homepage-image {
@@ -84,7 +88,7 @@ body {
       background-position: center;
       text-align: center;
       width: 100%;
-      padding-top: 0;
+      /* padding-top: 0; */
       margin-top: 11vh;
       
       overflow: hidden
@@ -134,13 +138,16 @@ body {
       padding-left: 170px;
       position: relative; */
       margin-top: 30px;
-
+      margin-left: 25%;
+      margin-right: 25%;
   }
   .below-products {
       display: flex;
+      justify-content: space-between;
+      
   }
   .below-products h2 {
-      width: 60%;
+      /* width: 60%; */
   }
   
   .read-more-button {
@@ -238,9 +245,11 @@ body {
   /***** Product Box ******/
   .body-container {
     /* your styles */
-    /* margin-top: 0; half the height of the ProductBox component */
-    transform: translateY(-10%);
+   margin-top: -400px;
+   
+    /* transform: translateY(-10%); */
     position: relative;
+   
     
   }
   .product-box-container {
@@ -600,49 +609,44 @@ body {
       background-size: cover;
       background-position: center;
       padding-top: 0;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-      text-align: center;
+    }
   
-    }
-    .story-image::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 50%; /* Adjust this value to control the height of the blur */
-      background: linear-gradient(to top, rgba(34,139,34,0.9), transparent); /* Tree green color */
-      pointer-events: none; /* This allows clicks to pass through the pseudo-element */
-    }
-    .story-image-text {
-      padding: 550px 0px 10px 300px;
-      width: 900px;
-      height: 250px;
+
+ 
+    .story-second-container1 {
+      background-color: #243f32;
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      /* height: 500px; */
+      justify-content: center;
       margin: 0;
+      padding: 0;
+
+    }
+    .story-second-container1 h2 {
+      font-size: 30px;
+      text-align: center;
+      margin: 0;
+      width: 700px;
+      padding-left: 29%;
       color: #EBD1C8;
     }
-  
-    .story-image-text h2 {
-      font-size: 50px;
-    }
- 
-  
   .story-second-container {
-      background-color: #243f32;
-      width: 100vw;
-      height: 500px;
+     
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       color: #fff;
+      padding-bottom: -120px;
     }
     
   
     .story-second-container p {
       font: 20px Poppins, Helvetica, Arial, sans-serif;
       padding-top: 20px;
-      margin-top: 150px;
+      /* margin-top: 150px; */
       margin-left: 50px;
       margin-right: 30px;
       width: 400px;
@@ -876,23 +880,26 @@ margin: 90px 8% 75px 8%;
 .bottom-second-div {
   display: flex;
   padding: 50px 100px 0 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .bottom-contact {
-  
-  width: 33%;
+  justify-content: center;
+  width: 100%;
   padding-right: 50px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   font: 15px Volkhov, Helvetica, Arial, sans-serif;
   
 }
 
 .bottom-contact p {
   font-weight: bold;
-  width: 150px;
+  width: 100%;
+  text-align: center;
 }
 
 .bottom-contact button {
@@ -1141,3 +1148,45 @@ width: 40%;
 
 
 /*** MAP ***/ 
+
+.map-container {
+  width: 100%;
+  height: 91vh;
+}
+.button-container {
+  margin-bottom: -0.4vh;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.map-infowindow {
+width: 300px;
+height: 300px;
+}
+
+.map-infowindow-header {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.map-infowindow-header h3 {
+  margin: 0;
+}
+.map-infowindow-header img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.map-infowindow-body {
+  padding-top: 10px;
+}
+.map-infowindow-body p {
+  font-weight: bold;
+}
+.map-infowindow-body h3 {
+  margin: 0;
+}

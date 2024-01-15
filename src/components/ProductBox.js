@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import ReactDOM  from 'react-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const ProductBox = ({ products }) => {
   const [activeBoxes, setActiveBoxes] = useState(Array(products.length).fill(false));
-
+const navigate = useNavigate();
   const handleBodyScroll = (disable) => {
     if (disable) {
       document.body.classList.add('no-scroll');
@@ -30,8 +31,8 @@ const ProductBox = ({ products }) => {
   };
 
   const handleExplore = () => {
-    console.log('Exploring');
-  };
+    navigate('/map')
+  }
 
 
   return (

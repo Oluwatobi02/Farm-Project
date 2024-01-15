@@ -24,6 +24,7 @@ const ProductData = [
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: CashewSingleImg,
         groupImg: CashewGroupImg,
+        coord: {lat: 6.649299879545282, lng: 3.956643868968972}
         
     },
     {
@@ -32,8 +33,8 @@ const ProductData = [
         funFact: "Despite their creamy texture and savory flavor, avocados are technically classified as berries, belonging to the Lauraceae family, which includes aromatic plants like cinnamon and bay laurel. This surprising botanical fact highlights the diverse nature of avocados, contributing to their unique culinary and nutritional profile.",
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: AvocadoSingleImg,
-        groupImg: AvocadoGroupImg
-        
+        groupImg: AvocadoGroupImg,
+        coord: {lat: 6.650019123219196, lng: 3.9615445008838637}
     },
     {
         title: 'Strawberry',
@@ -42,7 +43,7 @@ const ProductData = [
         fullDescription: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer",
         singleImg: StrawBerrySingleImg,
         groupImg: StrawBerryGroupImg,
-        
+        coord: {lat: 6.655180742483334, lng: 3.957847588933637}
     },
     {
         title: 'Mango',
@@ -51,7 +52,7 @@ const ProductData = [
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: MangoSingleImg,
         groupImg: MangoGroupImg,
-        
+        coord: {lat: 6.652332603032803, lng: 3.958587232910396}
     },
     {
         title: 'Palm Kernel',
@@ -60,7 +61,7 @@ const ProductData = [
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: PalmKernelSingleImg,
         groupImg: PalmKernelGroupImg,
-        
+        coord: {lat: 6.651951204076104, lng: 3.9596453649336136}
     },
     {
         title: 'Dates',
@@ -69,7 +70,7 @@ const ProductData = [
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: DateSingleImg,
         groupImg: DateGroupImg,
-        
+        coord: {lat: 6.654709229850445, lng: 3.950103507526744}
     },
     {
         title: 'Green Pepper',
@@ -78,7 +79,7 @@ const ProductData = [
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: GreenPepperSingleImg,
         groupImg: '',
-        
+        coord: {lat: 6.650931690401686, lng: 3.957194753078412}
     },
     {
         title: 'Pears',
@@ -87,7 +88,7 @@ const ProductData = [
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: PearImg,
         groupImg: '',
-        
+        coord: {lat: 6.653687594039958, lng: 3.95545604494363}
     },
 
     {
@@ -96,7 +97,8 @@ const ProductData = [
         funFact: 'Grapes are not only enjoyed fresh but are also dried to make raisins. The process of drying concentrates their natural sugars, resulting in a sweet and nutritious snack that has been enjoyed for thousands of years.',
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: GrapeImg,
-        groupImg: ''
+        groupImg: '',
+        coord: {lat: 6.655373024652408, lng: 3.9535634257456103}
     },
 
     {
@@ -105,7 +107,8 @@ const ProductData = [
         funFact: ' Peaches belong to the rose family and are closely related to almonds. The pits inside peaches contain compounds that release a distinct almond-like aroma when crushed, showcasing the botanical connection between these two fruits.',
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: PeachImg,
-        groupImg: ''
+        groupImg: '',
+        coord: {lat: 6.655828773894546, lng: 3.9610776713789018}
     },
 
     {
@@ -114,7 +117,8 @@ const ProductData = [
         funFact: "Apples can float in water because they are 25% air, making them less dense than water. This buoyancy is due to the air pockets in the apple's cellular structure, allowing them to bob on the water's surface.",
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: AppleImg,
-        groupImg: ''
+        groupImg: '',
+        coord: {lat: 6.651851814692964, lng: 3.9610037011368107}
     }  
 ]
 

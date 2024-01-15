@@ -9,9 +9,13 @@ import AboutHeader from '../components/AboutHeader'
 import BottomPage from '../components/BottomPage'
 import ReactPlayer from 'react-player'
 import homeBackgroundVideo from '../assets/home-background-video.mp4'; // Import the video file
-
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleExplore = () => {
+    navigate('/map')
+  }
   return (<>
     <div className='content-container'>
     <div className='homepage'>
@@ -32,7 +36,7 @@ const Home = () => {
       <div className='below-products-container'>
     <div className='below-products'>
       <h2>Want to learn more about our farm?</h2>
-      <button className='read-more-button'>Explore </button>
+      <button className='read-more-button' onClick={handleExplore}>Explore </button>
       </div>
     </div>
     <ReusableDiv />
