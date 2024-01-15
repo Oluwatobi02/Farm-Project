@@ -1,10 +1,9 @@
 import { GoogleMap, InfoWindow, Marker, OverlayView } from '@react-google-maps/api';
 import { FaTree } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react'
 import ProductData from '../lib/productData';
 import { useNavigate } from 'react-router-dom';
+import { mapOptions } from '../components/MapConfiguration';
 const Map = (props) => {
   const navigate = useNavigate()
   const handleGotoHomeClick = () => {
@@ -50,7 +49,7 @@ const containerStyle = {
       options={{ 
         minZoom: 15,
          maxZoom: 18,
-         mapId: '51df65068f3c3379', 
+         mapId: mapOptions.mapId, 
          mapTypeId: 'satellite',
          streetViewControl: false,
          restriction: {

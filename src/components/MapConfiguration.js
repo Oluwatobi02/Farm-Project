@@ -1,6 +1,6 @@
 const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
-
+const MAP_ID = process.env.REACT_APP_GOOGLE_MAP_ID
 export const mapOptions = {
     googleMapApiKey: GOOGLE_MAPS_API_KEY,
-    mapId: '51df65068f3c3379'
+    mapId:  MAP_ID
 }
