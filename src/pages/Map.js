@@ -1,15 +1,23 @@
-import { GoogleMap, InfoWindow, Marker, OverlayView } from '@react-google-maps/api';
+import { GoogleMap,  useLoadScript, InfoWindow, Marker, OverlayView } from '@react-google-maps/api';
 import { FaTree } from 'react-icons/fa';
 import React, { useState } from 'react'
 import ProductData from '../lib/productData';
 import { useNavigate } from 'react-router-dom';
 import { mapOptions } from '../components/MapConfiguration';
-const Map = (props) => {
+const Map = () => {
+
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey: mapOptions.googleMapApiKey, // Replace with your API key
+  });
+
+
+
+
   const navigate = useNavigate()
   const handleGotoHomeClick = () => {
 navigate('../')
   }
-    const { isLoaded } = props
+
     
 const containerStyle = {
     width: '100%',
@@ -37,7 +45,7 @@ const containerStyle = {
   const [mapLoaded, setMapLoaded] = useState(false)
 
 
-  return isLoaded && (
+  return  isLoaded && (
     <>
     <div className='map-container'>
     <GoogleMap
