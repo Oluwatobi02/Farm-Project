@@ -2,8 +2,8 @@ import React from 'react'
 
 const AboutHeader = () => {
   return (
-   <>
    <div className='home-about-page-heading'> 
+
     <div className='home-about-page-heading-text'>
       <div className='home-about-page-heading-actual-text'>
     <h1>A Visionary Pioneer of Natural Farming Revolutionizing Agricultural Practices</h1>
@@ -12,7 +12,7 @@ const AboutHeader = () => {
 </div>
  </div>
  <img src='https://themes.muffingroup.com/be/farm2/wp-content/uploads/2020/12/farm2-about-pic1.jpg' alt='about page heading' />
- </div></>
+ </div>
   )
 }
 

@@ -1,9 +1,11 @@
 import AppleImg from '../assets/apple.png'
+import AvocadoSingleImg from '../assets/avocado-single.png'
+import AvocadoGroupImg from '../assets/avocado-group.jpeg'
 import PearImg from '../assets/pear.png'
 import GrapeImg from '../assets/grape.png'
 import PeachImg from '../assets/peach.png'
-import CashewGroupImg from '../assets/cashew-group.jpg'
-import CashewSingleImg from '../assets/cashew-single.png'
+import CashewGroupImg from '../assets/cashew-fruit-group.jpeg'
+import CashewSingleImg from '../assets/cashew-fruit-single.png'
 import DateSingleImg from '../assets/date-single.png'
 import DateGroupImg from '../assets/date-group.jpg'
 import GreenPepperSingleImg from '../assets/green-pepper-single.png'
@@ -11,15 +13,35 @@ import MangoGroupImg from '../assets/mango-group.jpg'
 import MangoSingleImg from '../assets/mango-single.png'
 import PalmKernelSingleImg from '../assets/palm-kernel-single.png'
 import PalmKernelGroupImg from '../assets/palm-kernel-group.jpg'
+import StrawBerrySingleImg from '../assets/strawbery-single.png'
+import StrawBerryGroupImg from '../assets/strawberry-group.jpeg'
 
 const ProductData = [
     {
-        title: 'Cashew',
+        title: 'Cashew Fruit',
         shortDescription: 'Creamy and versatile seeds, favored for their rich taste and used in various culinary dishes.',
-        funFact: "The cashew nut, while well-known, is just one part of the cashew tree's offerings. The cashew apple, a fleshy and sweet swollen stalk attached to the nut, is also edible and used to create beverages, jams, and other culinary delights in certain regions.",
+        funFact: "The cashew fruit, while well-known, is just one part of the cashew tree's offerings. The cashew apple, a fleshy and sweet swollen stalk attached to the nut, is also edible and used to create beverages, jams, and other culinary delights in certain regions.",
         fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
         singleImg: CashewSingleImg,
         groupImg: CashewGroupImg,
+        
+    },
+    {
+        title: 'Avocado',
+        shortDescription: 'Creamy and buttery, avocados are green fruits celebrated for their versatility in salads and guacamole.',
+        funFact: "Despite their creamy texture and savory flavor, avocados are technically classified as berries, belonging to the Lauraceae family, which includes aromatic plants like cinnamon and bay laurel. This surprising botanical fact highlights the diverse nature of avocados, contributing to their unique culinary and nutritional profile.",
+        fullDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer',
+        singleImg: AvocadoSingleImg,
+        groupImg: AvocadoGroupImg
+        
+    },
+    {
+        title: 'Strawberry',
+        shortDescription: 'Sweet, red berry with a distinct heart shape and a juicy, flavorful taste.',
+        funFact: "A delightful quirk of nature, strawberries are distinguished as the only fruit with seeds on the outside. Remarkably, each strawberry, with its sweet and juicy flesh, carries an average of about 200 tiny seeds adorning its vibrant red exterior.",
+        fullDescription: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exerUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Ut enim ad minim veniam, quis nostrud exer",
+        singleImg: StrawBerrySingleImg,
+        groupImg: StrawBerryGroupImg,
         
     },
     {

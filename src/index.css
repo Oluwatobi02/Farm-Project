@@ -1,42 +1,30 @@
 html {
-  
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  /* background: repeating-linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 10px,
-    rgba(0, 0, 0, 0.3) 10px,
-    rgba(0, 0, 0, 0.3) 20px
-  ),
-  url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png); */
-  /* opacity: 0.9; */
+}
 #root {
   height: 100%;
 }
-}
   
-body {   
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  width: 100%;
   height: 100%;
-    
-
-  
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
   }
 
   
   .content-container {
-      width: 100%;
-      height: 100vh;
-      /* margin-top: 86px; */
-      
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
   }
-  
-  
   /**** NavBar ****/
   .navbar {
     position: fixed;
@@ -45,7 +33,9 @@ body {
     height: 9vh;
     padding: 10px 0;
     display: flex;
+    z-index: 1000;
   }
+  
   
   .navbar ul {
     flex: 3;
@@ -84,50 +74,67 @@ body {
   
   .homepage {
       width: 100%;
-      height: auto;
-      
+      height: 100%;  
     }
+
     .homepage-image {
-      background-image: url("https://themes.muffingroup.com/be/farm2/wp-content/uploads/2020/12/farm2-slider-bg.jpg");
+      position: relative;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
       background-size: cover;
       background-position: center;
       text-align: center;
       width: 100%;
-      max-height: 100vh;
-      padding-top: 115px;
+      padding-top: 0;
+      margin-top: 11vh;
+      
+      overflow: hidden
+      /* margin-top: 60px; */
     }
+
   
-    .homepagetext {
-      /* margin-top: 200px; */
-      text-align: center;
-      font-size: 21px;
-      font-family: volkhov, serif;
-      color: #274135;
-      padding-top: 150px;
-    }
-    .homepagetext h2 {
-      margin: 0;
-    }
+.homepagetext {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font: 41px Volkhov sans-serif;
+  width: 80%;
+  /* height: 100%; */
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.small-hr {
+  margin-top: 60px;
+  width: 150px;
+  border: none;
+  height: 4px; 
+  background-color: #5E9B50;  
+}
+
+.homepagetext h4 {
+ 
+  margin: 0;
+  padding: 0;
+
+}
+
   
     .homepage-divider-text {
-      margin-top: 100px;
+    
+      /* position: absolute; */
       color: #fff;
     }
-  .body-container {
-    
-  }
-  .small-hr {
-    margin-top: 60px;
-    width: 150px;
-    border: none;
-    height: 4px; 
-    background-color: #5E9B50; 
-  }
+ 
+
   
   .below-products-container {
-      margin-top: 90px;
+      /* margin-top: -400px;
       padding-left: 170px;
+      position: relative; */
+      margin-top: 30px;
+
   }
   .below-products {
       display: flex;
@@ -164,7 +171,7 @@ body {
   height: auto;
 }
 
-  
+
   .outside-div {
     width: 100%;
     height: auto;
@@ -175,7 +182,10 @@ body {
     padding: 90px 55px 75px;
     height: 600px;
     background-color: #FFE5B4;
-    /* opacity: 0.9; */
+    overflow: auto; /* add this line */
+    word-wrap: break-word; /* add this line */
+    white-space: normal;
+    overflow-wrap: break-word;
   }
   .top-text {
     text-align: left;
@@ -226,16 +236,58 @@ body {
   }
   
   /***** Product Box ******/
+  .body-container {
+    /* your styles */
+    /* margin-top: 0; half the height of the ProductBox component */
+    transform: translateY(-10%);
+    position: relative;
+    
+  }
   .product-box-container {
+    /* top: 15%; 
+    left: 50%; */
+    /* transform: translate(50%, -50%); */
+    transform: translateY(-70%);
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    margin-top: 0px;
     flex-direction: row;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  @media (max-width: 968px) {
+    .product-box-container {
+      /* adjust these styles for smaller screens */
+      top: 0%; /* adjust this value to move the container up or down */
+      left: 50%;
+      transform: translate(-50%, -10%);
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      /* padding-top: 50px; */
+      margin-top: 90px;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+
+      /* add any other styles you want to adjust for smaller screens */
+    }
+    .homepagetext {
+      /* adjust these styles for smaller screens */
+      top: -2%; /* adjust this value to move the text down for smaller screens */
+      /* add any other styles you want to adjust for smaller screens */
+    }
+    .body-container {
+      transform: translateY(1%);
+    }
   }
   
   .product-box {
@@ -244,6 +296,7 @@ body {
     height: 469px;
     margin: 0 1% 40px;
     box-sizing: border-box;
+    position: relative;
   }
   
   .product-box-content {
@@ -271,7 +324,6 @@ body {
   .img-wrapper img {
       max-width: 100%;
       max-height: 100%;
-      
   }
   
   
@@ -279,17 +331,20 @@ body {
   .box-active {
       position: fixed;
       display: block;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       background-color: rgba(0,123,90,0.5);
-      z-index: 2;
+      z-index: 9999;
       cursor: pointer;
     }
-    
+    .no-scroll {
+      overflow: hidden;
+    }
+
     .box-info-container p{
       position: relative;
       top: 20%;
@@ -406,6 +461,7 @@ body {
       flex-direction: column;
       padding: 70px 70px 0 70px;
     }
+
     
     .alternating-section {
       display: flex;
@@ -427,7 +483,7 @@ body {
       text-align: left;
     }
     .text h1 {
-      padding: 50px;
+      padding: 50px 0 30px 0;
       color: #000000;
     }
     .text p {
@@ -442,9 +498,6 @@ body {
   
     }
     
-  
-  
-  
   
   
     /***** About Page *****/
@@ -529,8 +582,8 @@ body {
   
     /*** Story Page ***/
     .story-container {
-      margin-top: 0;
-      padding-top: 86px;
+      
+      padding-top: 0;
       height: 100vh;
       width: 100%;
       align-items: center;
@@ -539,15 +592,28 @@ body {
     }
   
     .story-image {
-      background-image: url('https://themes.muffingroup.com/be/farm2/wp-content/uploads/2020/12/farm2-story-pic1.jpg');
+      background-image: url('./assets/storyImg.png');
+      position: relative;
+      margin-top: 11vh;
       width: 100%;
       height: 100%;
       background-size: cover;
+      background-position: center;
+      padding-top: 0;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
       text-align: center;
   
     }
-  
+    .story-image::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%; /* Adjust this value to control the height of the blur */
+      background: linear-gradient(to top, rgba(34,139,34,0.9), transparent); /* Tree green color */
+      pointer-events: none; /* This allows clicks to pass through the pseudo-element */
+    }
     .story-image-text {
       padding: 550px 0px 10px 300px;
       width: 900px;
@@ -775,13 +841,31 @@ margin: 90px 8% 75px 8%;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 110px 70px 70px 70px;
+  padding: 110px 70px 0 70px;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .bottom-page-container {
+    padding: 0;
+  }
+  .bottom-contact, .bottom-middle, .bottom-last {
+    padding: 0;
+  }
+  .bottom-second-div {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0 0 0;
+  }
+  
 
+}
+.product-bottom-page {
+  width: 100%;
+  height: 100%; 
+}
 .natural-flavor-img {
   background-image: url('https://themes.muffingroup.com/be/farm2/wp-content/uploads/2020/12/farm2-footer-pic1.png');
-  height: 100px;
+  min-height: 100px;
   background-repeat: no-repeat;
   margin-left: 35%;
 
@@ -794,16 +878,16 @@ margin: 90px 8% 75px 8%;
   padding: 50px 100px 0 100px;
 }
 
+
 .bottom-contact {
   
   width: 33%;
   padding-right: 50px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font: 15px Volkhov, Helvetica, Arial, sans-serif;
   
-}
-.bottom-contact h1 {
-  width: 200px;
 }
 
 .bottom-contact p {
@@ -813,6 +897,7 @@ margin: 90px 8% 75px 8%;
 
 .bottom-contact button {
   margin-top: 30px;
+  width: auto;
 
 }
 .bottom-middle {
@@ -883,6 +968,7 @@ padding-right: 20px;
   padding-right: 7%;
 
 }
+
 
 
 
@@ -1016,10 +1102,14 @@ width: 40%;
 
 .create {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 50px 0 0 0;
   text-align: center;
+  padding: 0;
 }
-
+.create form {
+  width: 100%;
+  height: 100%;
+}
 .create label {
   text-align: left;
   display: block;
@@ -1048,3 +1138,6 @@ width: 40%;
   border-radius: 8px;
   cursor: pointer;
 }
+
+
+/*** MAP ***/ 

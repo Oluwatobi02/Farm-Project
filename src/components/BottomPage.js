@@ -1,12 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import CreateForm from './CreateForm';
 
 const BottomPage = () => {
-    const [showForm, setShowForm] = useState(false);
-
-  const toggleForm = () => {
-    setShowForm(true);
-  };
 
   return (
     <>
@@ -21,15 +16,10 @@ const BottomPage = () => {
                 </h1>
                 <p>Thank you for visiting our website</p>
                
-                <button className='read-more-button'
-                onClick={toggleForm}>
+                <button className='read-more-button'>
                     Contact Us
                 </button>
-                {showForm && (
-                    <div className='box-active'>
-                            <CreateForm setShowForm={setShowForm}/>
-                    </div>
-                )}
+                            <CreateForm />
                 <div className='contact-faq'>
                     <ul className='faqs-list'>
                         <li><a>FAQ</a></li>

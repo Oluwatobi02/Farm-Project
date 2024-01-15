@@ -1,14 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import ReactDOM  from 'react-dom';
 
 
 const ProductBox = ({ products }) => {
   const [activeBoxes, setActiveBoxes] = useState(Array(products.length).fill(false));
 
+  const handleBodyScroll = (disable) => {
+    if (disable) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  };
+
   const handleBoxClick = (index) => {
     const newActiveBoxes = [...activeBoxes];
     newActiveBoxes[index] = true;
     setActiveBoxes(newActiveBoxes);
-    console.log(newActiveBoxes[index]);
+    handleBodyScroll(true);
+    
   };
 
   const handleBoxClose = (index) => {
@@ -16,6 +26,7 @@ const ProductBox = ({ products }) => {
     newActiveBoxes[index] = false;
     setActiveBoxes(newActiveBoxes);
     console.log(newActiveBoxes[index]);
+    handleBodyScroll(false);
   };
 
   const handleExplore = () => {
@@ -37,26 +48,32 @@ const ProductBox = ({ products }) => {
               <p>{plant.shortDescription}</p>
             </div>
 
-            {activeBoxes[index] && (
+            {activeBoxes[index] && ReactDOM.createPortal(
               <div className='box-active' 
-              >
+              onClick={() => handleBoxClose(index)}>
                 <div className='box-active-container'
                 onClick={() => handleBoxClose(index)}>
-                  <div className='box-info-container'>
+                  <div className='box-info-container'
+                  onClick={(e) => e.stopPropagation()}>
                     <h1>FUN FACT</h1>
                     <p>{plant.funFact}</p>
-                    <p>To read more on this Click Explore</p>
+                    <p><i>To read more on this Click Explore</i></p>
                   </div>
                   <div className='button-container'>
-                    <button type='button' className='bottom-right-button' onClick={handleExplore}>
+                    <button type='button' className='bottom-right-button' onClick={(e) => {
+                      e.stopPropagation();
+                      handleExplore()}}>
                       Explore
                     </button>
-                    <button type='button' className='bottom-right-button close-button' onClick={() => handleBoxClose(index)}>
+                    <button type='button' className='bottom-right-button close-button' onClick={(e) => {
+                      e.stopPropagation();
+                      handleBoxClose(index)}}>
                       Close
                     </button>
                   </div>
                 </div>
-              </div>
+              </div>,
+              document.body
             )}
           </div>
         ))}

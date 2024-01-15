@@ -7,25 +7,27 @@ import ProductData from '../lib/productData';
 import FarmerDiv from '../components/FarmerDiv'
 import AboutHeader from '../components/AboutHeader'
 import BottomPage from '../components/BottomPage'
+import ReactPlayer from 'react-player'
+import homeBackgroundVideo from '../assets/home-background-video.mp4'; // Import the video file
 
 
 const Home = () => {
   return (<>
-    <Nav />
     <div className='content-container'>
     <div className='homepage'>
+    <Nav />
       <div className='homepage-image'>
-
-     
+        <ReactPlayer url={homeBackgroundVideo} playing loop muted width='100%' height='100%' />
       <div className='homepagetext'>
-        <h2>Welcome to the place where natural flavor is born</h2>
-      </div>
+        <h4>Welcome to the place where</h4>
+          <h4>natural flavor is born</h4>
         <hr className='small-hr'/>
+      </div>
       <div className='homepage-divider-text'>
         <h2><i>Discover Our Product</i></h2>
       </div>
-      <div className='body-container'>
       <ProductBox products={ProductData}/>
+      <div className='body-container'>
       
       <div className='below-products-container'>
     <div className='below-products'>

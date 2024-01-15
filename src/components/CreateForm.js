@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const CreateForm = ({setShowForm}) => {
+const CreateForm = () => {
     const [ fullName, setFullName ] = useState('')
     const [ email, setEmail ] = useState('')
     const [ phone, setPhone ] = useState('')
@@ -9,14 +9,12 @@ const CreateForm = ({setShowForm}) => {
   const handleSubmit = (e) => {
 
     e.preventDefault();
-
-    setShowForm(false);
   };
 
   return (
-    <div className='box-active-container'>
+    
     <div className='create'>
-        <h2>Contact Us</h2>
+        
         <form onSubmit={handleSubmit}>
             <label>Full Name</label>
             <input
@@ -35,7 +33,7 @@ const CreateForm = ({setShowForm}) => {
                />
                   <label>Phone Number</label>
             <input
-               type="number"
+               type="text"
                required
                value={phone}
                onChange={(e) => setPhone(e.target.value)}
@@ -50,12 +48,11 @@ const CreateForm = ({setShowForm}) => {
 
                   <button>Submit</button>
             
-        </form>
         <p>{ fullName }</p>
         <p>{email}</p>
         <p>{phone}</p>
         <p>{message}</p>
-    </div>
+        </form>
     </div>
   )
 }

@@ -41,7 +41,7 @@ const Products = () => {
         </div>
         </div>
         <AlternatingSection ProductData={ProductData}/>
-        <div>
+        <div className='product-bottom-page'>
         <BottomPage />
         </div>
       </div>

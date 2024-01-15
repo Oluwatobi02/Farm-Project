@@ -5,9 +5,16 @@ import Pricing from "./pages/Pricing"
 import Product from "./pages/Products"
 import Story from './pages/Story'
 import About from './pages/About'
+import Map from './pages/Map'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { mapOptions } from './components/MapConfiguration'
+import { useJsApiLoader } from '@react-google-maps/api'
 
 const App = () => {
+  const { isLoaded } = useJsApiLoader({
+    id: mapOptions.mapId,
+    googleMapsApiKey: mapOptions.googleMapApiKey
+  })
   return (
     <BrowserRouter>
       <Routes>
@@ -17,6 +24,7 @@ const App = () => {
         <Route path={"/pricing"} element={<Pricing />} />
         <Route path={"/ourstory"} element={<Story />} />
         <Route path={"/contact"} element={<Contact />} />
+        <Route path={"/map"} element={<Map isLoaded={isLoaded}/>} />
       </Routes>
     </BrowserRouter>
   )
