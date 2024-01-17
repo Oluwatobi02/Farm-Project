@@ -47,7 +47,7 @@ const containerStyle = {
 
 
   const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
-  const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q="
+  const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 const state = 'lagos'
   async function checkWeather(city) {
     const response = await fetch(apiUrl + city+ `&appid=${apiKey}`);
@@ -68,7 +68,7 @@ useEffect(() => {
     setTemperature(temp);
   };
   fetchTemperature();
-}, [state]);
+}, [state]); // eslint-disable-next-line
 
   return  isLoaded && (
     <>
@@ -138,7 +138,7 @@ useEffect(() => {
           <img src={location.singleImg} alt={location.title} />
           </div>
           <div className='map-infowindow-body'>
-          <p>{`Temperature: ${temperature}`}</p>
+          <p>{`Temperature: ${temperature}℃`}</p>
           <p>{`Plant Species: `}</p>
           <p>{`Watering Needs: `}</p>
           <p>{`Soil Type: `}</p>
