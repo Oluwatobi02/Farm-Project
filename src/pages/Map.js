@@ -46,7 +46,7 @@ const containerStyle = {
   const [temperature, setTemperature] = useState(null);
 
 
-  const apiKey = "0341ed1fef7ef8c18b2b8aa9dd5a649a";
+  const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
   const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q="
 const state = 'lagos'
   async function checkWeather(city) {
