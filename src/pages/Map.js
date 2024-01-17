@@ -1,6 +1,6 @@
-import { GoogleMap,  useLoadScript, InfoWindow, Marker, OverlayView } from '@react-google-maps/api';
+import { GoogleMap,  useLoadScript, InfoWindow, OverlayView } from '@react-google-maps/api';
 import { FaTree } from 'react-icons/fa';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ProductData from '../lib/productData';
 import { useNavigate } from 'react-router-dom';
 import { mapOptions } from '../components/MapConfiguration';
@@ -43,7 +43,32 @@ const containerStyle = {
 
   const [showInfoWindows, setShowInfoWindows] = useState(ProductData.map(() => false));
   const [mapLoaded, setMapLoaded] = useState(false)
+  const [temperature, setTemperature] = useState(null);
 
+
+  const apiKey = "0341ed1fef7ef8c18b2b8aa9dd5a649a";
+  const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q="
+const state = 'lagos'
+  async function checkWeather(city) {
+    const response = await fetch(apiUrl + city+ `&appid=${apiKey}`);
+     
+
+     if (response.status === 404) {
+      return null;
+     } 
+     else {
+        const data = await response.json();
+        return data.main.temp
+      
+}}
+
+useEffect(() => {
+  const fetchTemperature = async () => { 
+    const temp = await checkWeather(state);
+    setTemperature(temp);
+  };
+  fetchTemperature();
+}, [state]);
 
   return  isLoaded && (
     <>
@@ -113,7 +138,7 @@ const containerStyle = {
           <img src={location.singleImg} alt={location.title} />
           </div>
           <div className='map-infowindow-body'>
-          <p>{`Temperature: ${50}`}</p>
+          <p>{`Temperature: ${temperature}`}</p>
           <p>{`Plant Species: `}</p>
           <p>{`Watering Needs: `}</p>
           <p>{`Soil Type: `}</p>

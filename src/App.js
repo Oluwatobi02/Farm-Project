@@ -9,10 +9,10 @@ import { mapOptions } from './components/MapConfiguration'
 import { useJsApiLoader } from '@react-google-maps/api'
 
 const App = () => {
-  const { isLoaded } = useJsApiLoader({
-    id: mapOptions.mapId,
-    googleMapsApiKey: mapOptions.googleMapApiKey
-  })
+  // const { isLoaded } = useJsApiLoader({
+  //   id: mapOptions.mapId,
+  //   googleMapsApiKey: mapOptions.googleMapApiKey
+  // })
   return (
     <BrowserRouter>
       <Routes>
