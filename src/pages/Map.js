@@ -95,9 +95,6 @@ useEffect(() => {
           // strictBounds: true,
         },
       }}
-        onClick={(event) => {
-          alert(`Coordinates are: ${event.latLng.lat()}, ${event.latLng.lng()}`);
-        }}
     >
         {mapLoaded && (<>
 
