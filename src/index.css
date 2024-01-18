@@ -29,6 +29,8 @@ body {
   }
   /**** NavBar ****/
   .navbar {
+    display: flex;
+  justify-content: space-between;
     position: fixed;
     background-color: #274135; 
     width: 100%;
@@ -38,7 +40,13 @@ body {
     z-index: 1000;
   }
   
-  
+  .btn {
+    border: none;
+    background-color: ghostwhite;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
   .navbar ul {
     flex: 3;
     /* max-width: 1220px; */
@@ -47,6 +55,9 @@ body {
     padding: 21px;
     margin: 0;
     text-align: center;
+    display: flex;
+  justify-content: space-between;
+ 
   }
   
   .navbar li {
@@ -56,6 +67,7 @@ body {
     font-size: 17px;
     padding-left: 50px;
   }
+  
   
   .navbar img {
     padding-left: 30px;
@@ -71,7 +83,11 @@ body {
     text-decoration: none; 
     color: inherit;
   }
-  
+
+@media (max-width: 768px) {
+.navbar li:not(.btn) {
+  display: none;
+}}
   /**** Home Page ****/
   
   .homepage {
@@ -1066,7 +1082,21 @@ width: 40%;
   color: #5e9b50;
   font: 32px Poppins, Helvetica, Arial, sans-serif;
 }
+@media (max-width: 768px) {
+  .contact-box-header,
+  .contact-box-time {
+    width: 100%;
+  }
 
+  .items-time-list {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .items-time-list li {
+    padding-right: 0;
+  }
+}
 .contact-hr {
   width: 90%;
   

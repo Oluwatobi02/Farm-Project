@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import logo from '../assets/upgs-logo.jpg'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -11,7 +13,8 @@ const Nav = () => {
     <nav className='navbar'>
        
         <img src={logo} alt='navbar' onClick={handleImageClick}/>
-        
+    
+        <FontAwesomeIcon icon={faBars} className='navbar-bars' />
         <ul>
             <li><Link to={"/"}>Home</Link></li>
             <li><Link to={"/products"}>Products</Link></li>
@@ -19,6 +22,7 @@ const Nav = () => {
             <li><Link to={"/contact"}>Contact</Link></li>
             <li><Link to={"/map"}>Map</Link></li>
         </ul>
+
     </nav> 
       
     
