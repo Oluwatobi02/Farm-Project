@@ -84,10 +84,10 @@ body {
     color: inherit;
   }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 .navbar li:not(.btn) {
   display: none;
-}}
+}} */
   /**** Home Page ****/
   
   .homepage {
