@@ -14,7 +14,7 @@ const Nav = () => {
        
         <img src={logo} alt='navbar' onClick={handleImageClick}/>
     
-        <FontAwesomeIcon icon={faBars} className='navbar-bars' />
+        {/* <FontAwesomeIcon icon={faBars} className='navbar-bars' /> */}
         <ul>
             <li><Link to={"/"}>Home</Link></li>
             <li><Link to={"/products"}>Products</Link></li>
