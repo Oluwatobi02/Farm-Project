@@ -1,7 +1,7 @@
 const TeamData = [
 
     {
-        name: 'Tobi Olajide',
+        name: 'Olaniyan Teyibo',
         bio: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui repreenderit in voluptate.',
         img: 'https://themes.muffingroup.com/be/farm2/wp-content/uploads/2020/12/farm2-about-pic4.png',
     },
@@ -13,7 +13,7 @@ const TeamData = [
     },
  
     {
-        name: 'Victor Olajide',
+        name: 'Oladosu Teyibo',
         bio: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui repreenderit in voluptate.',
         img: 'https://themes.muffingroup.com/be/farm2/wp-content/uploads/2020/12/farm2-about-pic4.png',
     }
