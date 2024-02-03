@@ -43,7 +43,7 @@ const Contact = () => {
                 <img src='https://themes.muffingroup.com/be/farm2/wp-content/uploads/2020/12/farm2-contact-icon2.png' />
                 <h2>Address</h2>
                 <span>
-                Level 13, 2 Elizabeth St, Melbourne, Victoria 3000, Australia
+                Level 13, 2 Elizabeth St, Epe, Lagos, Nigeria
                 </span>
               </div>
               <div className='contact-type email'>

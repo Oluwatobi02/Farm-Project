@@ -423,7 +423,9 @@ body {
     /**** Product Page ****/
   
     .product-page-container {
-      background-image: url('https://i.pinimg.com/236x/86/45/e1/8645e14e444d69fd80149c8f6eb547b0.jpg');
+      background-image: url('./assets/productheader.jpg');
+      margin-top: 9vh;
+      object-fit: cover;
       height: 100vh;
       width: 100vw;
       background-size: cover;

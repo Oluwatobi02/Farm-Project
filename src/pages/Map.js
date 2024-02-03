@@ -36,10 +36,10 @@ const containerStyle = {
     
   };
 
-  // const locations = Array.from({ length: 20 }, () => ({
-  //   lat: Math.random() * (boundaries.north - boundaries.south) + boundaries.south,
-  //   lng: Math.random() * (boundaries.east - boundaries.west) + boundaries.west,
-  // }));
+  const locations = Array.from({ length: 20 }, () => ({
+    lat: Math.random() * (boundaries.north - boundaries.south) + boundaries.south,
+    lng: Math.random() * (boundaries.east - boundaries.west) + boundaries.west,
+  }));
 
   const [showInfoWindows, setShowInfoWindows] = useState(ProductData.map(() => false));
   const [mapLoaded, setMapLoaded] = useState(false)
@@ -80,7 +80,7 @@ useEffect(() => {
       draggable={!showInfoWindows.some(isOpen => isOpen)}
       onTilesLoaded={()=> setMapLoaded(true)}
       options={{ 
-        minZoom: 15,
+        minZoom: 0,
          maxZoom: 18,
          mapId: mapOptions.mapId, 
          mapTypeId: 'satellite',
@@ -92,7 +92,7 @@ useEffect(() => {
             east: boundaries.east,
             west: boundaries.west,
           },
-          // strictBounds: true,
+          strictBounds: true,
         },
       }}
     >

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import AboutHeaderImage from '../assets/aboutheader.png'
 const AboutHeader = () => {
   return (
    <div className='home-about-page-heading'> 
@@ -7,11 +7,15 @@ const AboutHeader = () => {
     <div className='home-about-page-heading-text'>
       <div className='home-about-page-heading-actual-text'>
     <h1>A Visionary Pioneer of Natural Farming Revolutionizing Agricultural Practices</h1>
-    <p>Masanobu Fukuoka, a distinguished Japanese farmer, philosopher, and author, stands as a visionary pioneer at the forefront of the Natural Farming movement. His revolutionary work challenges conventional agricultural practices, advocating for a profound shift in perspective—embracing a philosophy known as "Do-Nothing Farming" or "Natural Farming." Fukuoka's approach involves cultivating crops in harmony with nature, minimizing human intervention, and fostering a sustainable coexistence with the environment.</p>
+    <p>As we look ahead, UPGS Foundation remains committed to being a leader in the agricultural sector. Our vision is to inspire positive change, encourage sustainable practices across the industry, and contribute to the overall well-being of our community and beyond.
+
+Explore our website to discover more about our journey, values, and the exceptional produce we offer. Join us in supporting a greener, healthier future through agriculture that thrives on excellence.
+
+Thank you for choosing UPGS Foundation, where the seeds of excellence grow into a harvest of quality and sustainability.</p>
 <button className='read-more-button'>Read more</button>
 </div>
  </div>
- <img src='https://themes.muffingroup.com/be/farm2/wp-content/uploads/2020/12/farm2-about-pic1.jpg' alt='about page heading' />
+ <img src={AboutHeaderImage} alt='about page heading' />
  </div>
   )
 }

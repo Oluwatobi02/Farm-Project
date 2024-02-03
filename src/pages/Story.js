@@ -14,22 +14,22 @@ const Story = () => {
  </div>
 
         <div className='story-second-container1'>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h2>
+        <h2>Embarking on a Pioneering Journey: UPGS Foundation, Poised at the Threshold of Agricultural Eminence, Breaking Barriers and Cultivating Excellence</h2>
       <div className='story-second-container'>
-        <p className='left'>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla imperdiet id ac magna. Suspendisse vel facilisis odio, at ornare nibh. In malesuada, tortor eget sodales mollis, mauris lectus hendrerit purus, porttitor finibus eros lorem eget mauris. Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum</p>
-        <p className='right'>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla imperdiet id ac magna. Suspendisse vel facilisis odio, at ornare nibh. In malesuada, tortor eget sodales mollis, mauris lectus hendrerit purus, porttitor finibus eros lorem eget mauris. Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum</p>
+        <p className='left'>From the luscious cashew orchards that sway in the Epe breeze to the vibrant array of crops that paint our fields, UPGS Foundation is a canvas of agricultural diversity. Our commitment to quality extends from the selection of seeds to the meticulous care given during growth, ensuring a kaleidoscope of premium produce.</p>
+        <p className='right'>Beyond the fields, UPGS Foundation stands as a pillar of community empowerment. We believe in sharing prosperity, offering training, and creating employment opportunities to uplift the local community. Together, we grow not just crops but a sustainable and resilient community.</p>
           
       </div>
       </div>
  
   
-    <div className='all-team-card-container'>
+    {/* <div className='all-team-card-container'>
       
       {TeamData?.map((person, index) => (
         <TeamCard TeamData={person} index={index}/>
       ))}
       
-    </div>
+    </div> */}
 
    <BottomPage />
       
